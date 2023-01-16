@@ -1,0 +1,15 @@
+def count(word, letter):
+    counter = 0
+    for char in word:
+        if char == letter:
+            counter = counter + 1
+    return counter
+
+userquery = input('What word do you want to count the letter? ')
+userLetter = input('What letter do you want to count? ')
+
+outputcount = count(userquery, userLetter)
+print('The amount that ' + userLetter + ' appears is: ' + str(outputcount))
+
+
+
